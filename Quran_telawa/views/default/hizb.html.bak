@@ -1,0 +1,22 @@
+{{right_sidebar_enabled=True}}
+
+{{extend 'layout.html'}}
+
+<!-----------------------------------استخراج اسم الاحزاب المتاح للقراءة ------------------>
+<div class="agzaa">
+{{if hizbrow:}}
+{{for hizbfs in hizball:}}
+
+{{if hizbfs.readh:}}
+<div class="nameh"><img class="readone"src="../static/images/read.png" alt=""> <img src="{{=hizbfs.hizb}}"></div>
+{{else:}}
+<div class="nameh"><a href="{{=URL('default','hizbfv.html',args=hizbfs.id)}}" > <img src="{{=hizbfs.hizb}}"></a></div>
+{{pass}}
+{{pass}}
+</div>
+
+{{else:}}
+{{db(db.quranh.id<=60).update(readh=False)}}
+ {{db(db.ehsaa.id==2).update(datelast=request.now,numberkh=numold.numberkh+1)}}
+{{redirect(URL('hizb.html'))}}   
+{{pass}}

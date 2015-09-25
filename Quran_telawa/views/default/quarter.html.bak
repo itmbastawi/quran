@@ -1,0 +1,21 @@
+{{right_sidebar_enabled=True}}
+
+{{extend 'layout.html'}}
+
+<!-----------------------------------استخراج اسم الارباع المتاح للقراءة ------------------>
+<div class="agzaa">
+{{if hizbrow:}}
+{{for hizbfs in hizball:}}
+
+{{if hizbfs.readh:}}
+<div class="name"><img class="doneread"src="../static/images/read.png" alt=""> <img src="{{=hizbfs.hizb}}"></div>
+{{else:}}
+<div class="name"><a href="{{=URL('default','hizbfv.html')}}" > <img src="{{=hizbfs.hizb}}"></a></div>
+{{pass}}
+{{pass}}
+</div>
+
+{{else:}}
+{{db(db.quranh.id<=30).update(readh=False)}}
+    
+{{pass}}

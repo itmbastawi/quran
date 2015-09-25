@@ -1,0 +1,200 @@
+/** these MUST stay **/
+body { margin: 0; padding:0; border: 0; }
+a { text-decoration:none}
+a:hover {text-decoration: underline}
+a.button {text-decoration: none}
+h1,h2,h3,h4,h5,h6 {margin: 0.5em 0 0.25em 0; display: block; font-family:Kayrawan, AlBattar,Andalus;}
+        h1 { font-size: 4.00em;}
+        h2 { font-size: 3.00em;}
+        h3 { font-size: 2.00em;}
+        h4 { font-size: 1.50em;}
+        h5 { font-size: 1.25em;}
+        h6 { font-size: 1.12em;}
+right { float:right; text-align: right; }
+left { float:left; text-align: left; }
+center { width:100; text-align: center; vertical-align:middle;}
+
+
+
+
+span, input, select, textarea, button, label, a { display: inline }
+img { border: 0; }
+
+i, em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 0.8em; }
+textarea { width: 600px; }
+code { font-family: Courier;}
+input[type=text], input[type=password], select { width: 300px; }
+ul { list-style-type: none; margin: 0px; padding: 0px; }
+/** end **/
+
+/* Sticky footer begin */
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -8em; /* set last value to footer height plus footer vertical padding */
+}
+
+
+
+/* Sticky footer end */
+
+body {
+    background-image: url(../images/bg2.jpg) , url(../images/bg3.png) ;
+    background-size:cover;
+    background-repeat:no-repeat , repeat-y;
+}
+.incent{
+padding-top: 15px;
+}
+.rightside{
+float: right;
+width: 53%;
+}
+.rightside p{
+float: right;
+color: #FFF;
+font-size: 24px;
+line-height: 40px;
+}
+
+/***************تنسيق جزء الاختيارات********************************/
+.agzaa{
+float: inherit;
+direction: rtl;
+background: url(../images/body/topb.png) , url(../images/body/bottomb.png) , url(../images/body/body.png);
+background-size: contain ;
+background-repeat: no-repeat , no-repeat , repeat-y;
+background-position: top center , bottom center , center center;
+background-color: #d5e9dd;
+padding:60px 50px;
+border-radius: 30px;
+
+}
+
+
+
+.name{
+ position: relative;
+float: right;
+width: 33%;
+
+}
+.name img{
+width: 90%;
+
+
+}
+.nameh{
+position: relative;
+float: right;
+width: 23%;
+margin:auto;
+
+}
+.nameh img{
+width: 100%;
+margin:0 16px;
+}
+
+.name .readone{
+
+position: absolute;
+    left:70px;
+    top: 0px;
+    z-index:1;
+width:40%;
+}
+.nameh .readone{
+position: absolute;
+    left:0px;
+    top: 70px;
+    z-index:1;
+width:70%;
+
+}
+.bttm,#submit_record__row {
+direction: rtl;
+font-size: 15px;
+color: #ffa700;
+padding: 15px;
+margin-top: 11px;
+}
+#quranj_readj__label {
+font-size: 25px;
+padding: 15px;
+}
+.wordn{
+direction: rtl;
+color: white;
+font-size: 20px;
+}
+.about p{
+font-size: 30px;
+color: #ffeded;
+line-height: 1.5	;
+}
+.footer {
+    background-color: #ECECEC;
+}
+.header {
+    // background: <fill here for header image>;
+}
+
+
+/*********** web2py specific ***********/
+div.flash {
+    font-weight: bold;
+    display: none;
+    position: fixed;
+    padding: 10px;
+    top: 48px;
+    right: 50px;
+    min-width: 280px;
+    opacity: 0.85;
+    margin: 0px 0px 10px 10px;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 2;
+}
+ .topbar{
+background-color:#00246d; 
+ color: #ffd700;
+ }
+ 
+ 
+
+
+#navbar {float: right; padding: .4em 0;}
+
+#menu {padding-top: .2em;}
+.numkh h4,p{
+direction: rtl;
+text-align: center;
+font-family: AlBattar,Kayrawan,Andalus;
+
+}
+.right {
+       width:100%;
+       text-align: right;
+       float: right;
+}
+
+/* #MEDIA QUERIES SECTION */
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+
+}

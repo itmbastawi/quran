@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+db.define_table('quranj',
+                Field('juza','string'),
+                Field('readj','boolean'))
+db.define_table('quranh', 
+                Field('hizb','string'),
+                Field('readh','boolean'), )
+db.define_table('quran',
+                Field('quarter','string'),
+                Field('readr','boolean'),
+                Field('hizb','string'),
+                Field('readh','boolean'),
+                Field('juza','string'),
+                Field('readj','boolean'))
+#الاحصائيات
+db.define_table('ehsaa',
+                Field('khatma','string'),
+                Field('numberkh','integer'),
+                Field('datelast','datetime'))

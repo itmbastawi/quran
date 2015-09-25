@@ -1,0 +1,24 @@
+{{right_sidebar_enabled=True}}
+
+{{extend 'layout.html'}}
+<div>
+
+{{if juzsee.readh:}}
+{{redirect(URL('default','hizb.html'))}}
+{{else:}}
+
+<div class="bttm" > 
+{{=juzform}}
+</div>  
+<div class="wordn">
+اقراء الجزء الذى اخترته من احد هذه الروابط<br>
+مصحف الكترونى <br>مصحف مصور<br>
+او من مصحفك او على الموبيل
+
+</div>
+<img src="../{{=juzsee.hizb}}" alt="حزب ">
+
+{{pass}}
+
+
+</div>

@@ -1,0 +1,24 @@
+{{right_sidebar_enabled=True}}
+
+{{extend 'layout.html'}}
+
+<!-----------------------------------استخراج اسم الجزء المتاح للقراءة ------------------>
+<div class="agzaa">
+{{if juzrow:}}
+{{for juzfs in juzall:}}
+
+{{if juzfs.readj:}}
+<div class="name"><img src="{{=juzfs.juza}}"></div>
+{{else:}}
+<div class="name"><a href="{{=URL('default','juzfv')}}" >   <img src="{{=juzfs.juza}}"></a></div>
+{{pass}}
+</div>
+
+{{else:}}
+{{db(db.quran.id<=30).update(readj=False)}}
+    
+{{pass}}
+<!-----------------------------------استخراج اسم الجزءالذى تم قراءته ------------------>
+<div class="readjuz">
+
+</div>

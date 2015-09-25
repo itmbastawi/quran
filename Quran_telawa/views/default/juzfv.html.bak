@@ -1,0 +1,19 @@
+{{right_sidebar_enabled=True}}
+
+{{extend 'layout.html'}}
+<div>
+{{if juzsee.readj:}}
+{{redirect(URL('default','juz.html'))}}
+{{else:}}
+<img src="../{{=juzsee.juza}}" alt="الجزء ">
+<div class="bttm" >
+{{=juzform}}  
+</div>
+{{pass}}
+<div class="">
+اقراء الجزء الذى اخترته من احد هذه الروابط<br>
+مصحف الكترونى <br>مصحف مصور<br>
+او من مصحفك او على الموبيل
+
+</div>
+</div>

@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+<div class="agzaa">
+{{if testh:}}
+{{for t in testh:}}
+
+{{row=db.quran(t.id)
+ rows=SQLFORM(db.quran,row,buttons=[TAG.button('قراته',_type="submit")],showid=False,fields = ['readg'],labels = {'readg':'هل قرات الجزء'}).process(next=URL('default', 'index'))}}
+ {{forms=SQLFORM(db.quran,row,buttons=[],fields = ['goza'],labels ={'goza':''},readonly=True,showid=False)}}
+
+<div class="twoo"><div class="name">{{=forms}}</div>
+    <div class="okread">{{=rows}}</div></div>
+
+{{pass}}
+</div>
+
+{{else:}}
+{{db(db.quran.id<=30).update(readg=False)}}
+    
+{{pass}}
